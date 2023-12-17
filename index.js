@@ -90,7 +90,7 @@ console.log({userId})
     // Process the question and generate a response
     const response = await chain.invoke({
       question,
-     // conv_history: formatConvHistory(convHistory),
+      conv_history: formatConvHistory(convHistory),
     });
 
     // Append the AI response to the conversation history
